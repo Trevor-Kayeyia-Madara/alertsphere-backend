@@ -60,9 +60,6 @@ app.post(
                     phone,
                     password: hashedPassword,
                     role: isOfficer ? 'Law Enforcement Officer' : 'Citizen',
-                    anonymous_status: anonymous,
-                    officer_verification: isOfficer ? false : null,
-                    verification_status: false, // Updated after OTP verification
                 },
             ]);
 
